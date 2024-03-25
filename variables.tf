@@ -1017,6 +1017,12 @@ variable "semp_over_msg_bus_enabled" {
   default     = null
 }
 
+variable "semp_over_msg_bus_legacy_show_clear_enabled" {
+  description = "Enable or disable \"legacy-show-clear\" SEMP over the message bus commands (that is, SEMP show and administration requests published to the topic \"#P2P/[router name]/#client/SEMP\") for the current Message VPN"
+  type        = bool
+  default     = null
+}
+
 variable "semp_over_msg_bus_show_enabled" {
   description = "Enable or disable \"show\" SEMP over the message bus commands for the current Message VPN"
   type        = bool

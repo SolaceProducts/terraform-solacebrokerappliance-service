@@ -105,6 +105,7 @@ resource "solacebroker_msg_vpn" "main" {
   semp_over_msg_bus_admin_distributed_cache_enabled              = var.semp_over_msg_bus_admin_distributed_cache_enabled
   semp_over_msg_bus_admin_enabled                                = var.semp_over_msg_bus_admin_enabled
   semp_over_msg_bus_enabled                                      = var.semp_over_msg_bus_enabled
+  semp_over_msg_bus_legacy_show_clear_enabled                    = var.semp_over_msg_bus_legacy_show_clear_enabled
   semp_over_msg_bus_show_enabled                                 = var.semp_over_msg_bus_show_enabled
   service_amqp_max_connection_count                              = var.service_amqp_max_connection_count
   service_amqp_plain_text_enabled                                = var.service_amqp_plain_text_enabled
