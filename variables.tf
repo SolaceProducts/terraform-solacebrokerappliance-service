@@ -144,9 +144,45 @@ variable "alias" {
   default     = null
 }
 
+variable "allow_bridge_connections_enabled" {
+  description = "Enable or disable allowing Bridge clients using the Client Profile to connect"
+  type        = bool
+  default     = null
+}
+
 variable "allow_guaranteed_endpoint_create_durability" {
   description = "The types of Queues and Topic Endpoints that clients using the client-profile can create"
   type        = string
+  default     = null
+}
+
+variable "allow_guaranteed_endpoint_create_enabled" {
+  description = "Enable or disable allowing clients using the Client Profile to create topic endpoints or queues"
+  type        = bool
+  default     = null
+}
+
+variable "allow_guaranteed_msg_receive_enabled" {
+  description = "Enable or disable allowing clients using the Client Profile to receive guaranteed messages"
+  type        = bool
+  default     = null
+}
+
+variable "allow_guaranteed_msg_send_enabled" {
+  description = "Enable or disable allowing clients using the Client Profile to send guaranteed messages"
+  type        = bool
+  default     = null
+}
+
+variable "allow_shared_subscriptions_enabled" {
+  description = "Enable or disable allowing shared subscriptions"
+  type        = bool
+  default     = null
+}
+
+variable "allow_transacted_sessions_enabled" {
+  description = "Enable or disable allowing clients using the Client Profile to establish transacted sessions"
+  type        = bool
   default     = null
 }
 
