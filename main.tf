@@ -172,7 +172,13 @@ resource "solacebroker_msg_vpn_client_profile" "main" {
   msg_vpn_name        = solacebroker_msg_vpn.main.msg_vpn_name
   client_profile_name = var.client_profile_name
 
+  allow_bridge_connections_enabled                                 = var.allow_bridge_connections_enabled
   allow_guaranteed_endpoint_create_durability                      = var.allow_guaranteed_endpoint_create_durability
+  allow_guaranteed_endpoint_create_enabled                         = var.allow_guaranteed_endpoint_create_enabled
+  allow_guaranteed_msg_receive_enabled                             = var.allow_guaranteed_msg_receive_enabled
+  allow_guaranteed_msg_send_enabled                                = var.allow_guaranteed_msg_send_enabled
+  allow_shared_subscriptions_enabled                               = var.allow_shared_subscriptions_enabled
+  allow_transacted_sessions_enabled                                = var.allow_transacted_sessions_enabled
   api_queue_management_copy_from_on_create_template_name           = var.api_queue_management_copy_from_on_create_template_name
   api_topic_endpoint_management_copy_from_on_create_template_name  = var.api_topic_endpoint_management_copy_from_on_create_template_name
   compression_enabled                                              = var.compression_enabled
