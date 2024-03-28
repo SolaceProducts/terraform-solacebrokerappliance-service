@@ -13,19 +13,19 @@
 # limitations under the License.
 
 provider "solacebroker" {
-  username = "admin"
-  password = "admin"
-  url      = "http://localhost:8080"
-  skip_api_check  = true
+  username       = "admin"
+  password       = "admin"
+  url            = "http://localhost:8080"
+  skip_api_check = true
 }
 
 module "testvpn" {
   source = "../.."
 
-  msg_vpn_name           = "rest-enabled-vpn"
+  msg_vpn_name = "rest-enabled-vpn"
 
   // Enable and configure incoming messaging protocols, for example REST. Note that plain text is not recommended for production use.
-  service_rest_incoming_plain_text_enabled  = true
+  service_rest_incoming_plain_text_enabled     = true
   service_rest_incoming_plain_text_listen_port = 9001
 
   // Uncomment to disable plain text SMF - however secure transport SMF requires a server certificate installed on the broker
