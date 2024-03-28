@@ -13,20 +13,20 @@
 # limitations under the License.
 
 provider "solacebroker" {
-  username = "admin"
-  password = "admin"
-  url      = "http://localhost:8080"
-  skip_api_check  = true
+  username       = "admin"
+  password       = "admin"
+  url            = "http://localhost:8080"
+  skip_api_check = true
 }
 
 module "testvpn" {
   source = "../.."
 
-  msg_vpn_name           = "vpn-with-oauth"
+  msg_vpn_name = "vpn-with-oauth"
   // No need to set the VPN enabled, it defaults to true
   // enabled = true
 
-  oauth_profile_name  = "sampleVpnOauthProfile"
+  oauth_profile_name = "sampleVpnOauthProfile"
   // with "oauth_profile_name" defined, OAuth authentication will be automatically enabled on the message VPN
   // no need to set the following:
   // authentication_oauth_enabled = true
