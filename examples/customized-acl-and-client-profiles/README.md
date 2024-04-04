@@ -46,7 +46,7 @@ If you don't already have access to a broker, refer to the [Developers page](htt
 The sample is available from the module GitHub repo:
 
 ```bash
-git clone https://github.com/SolaceProducts/terraform-solacebroker-rest-delivery.git
+git clone https://github.com/SolaceProducts/terraform-solacebrokerappliance-service.git
 cd examples/customized-acl-and-client-profiles
 ```
 

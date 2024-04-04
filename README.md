@@ -12,20 +12,20 @@ Use case details are provided in the [Examples](#examples).
 
 ### Required
 
-* `msg_vpn_name` - thename of the new message VPN to be created
+* `msg_vpn_name` - the name of the new message VPN to be created
 
 ### Optional
 
 * `acl_profile_name` - the name of the optionally added ACL profile. A `default` profile is always created and if left at default empty then no additional ACL profile will be created.
 * `client_profile_name` - the name of the optionally added client profile. A `default` profile is always created and if left at default empty then no additional ACL profile will be created.
-* `oauth_profile_name` - the name of an optionally added OAuth profile. Note that there will be no OAUth profile created unless a non-empty name is provided.
+* `oauth_profile_name` - the name of an optionally added OAuth profile. Note that there will be no OAuth profile created unless a non-empty name is provided.
 * `oauth_profile_client_required_claims` - a set of optional client-required claims.
 * `oauth_profile_resource_server_required_claims` - a set of optional server-required claims.
 * `cert_matching_rule_name` - the name of an optionally added certificate matching rule. Note that there will be no certificate matching rule created unless a non-empty name is provided.
 * `cert_matching_rule_conditions` - a set of optional certificate matching rule conditions.
 * `cert_matching_rule_attribute_filters` - a set of optional certificate matching rule attribute filters.
 
-Additional optional module variables names are the same as the underlying resource attributes. The recommended approach to determine variable name mappings is to look up the resource's documentation for matching attribute names:
+Additional optional module variable names are the same as the underlying resource attributes. The recommended approach to determine variable name mappings is to look up the resource's documentation for matching attribute names:
 
 | Resource name |
 |---------------|
@@ -45,8 +45,6 @@ Exceptions: the following optional variables' default value differ from the reso
 | `enabled` | `true` | the Message VPN and underlying created objects |
 | `jndi_enabled` | `true` |
 | `max_msg_spool_usage` | 1500 | MB, message VPN |
-
--> The module default for the  optional variable is `true`, which 
 
 ## Module outputs
 
