@@ -66,7 +66,7 @@ variable "client_profile_name" {
 }
 
 variable "oauth_profile_name" {
-  description = "The name of the OAuth Profile to be created and added to the Message VPN. If not specified, no OAuth Profile will be added. If specified, OAUth will be enabled on the VPN and this profile will be set as the default profile. Default is \"\""
+  description = "The name of the OAuth Profile to be created and added to the Message VPN. If not specified, no OAuth Profile will be added. If specified, OAuth will be enabled on the VPN and this profile will be set as the default profile. Default is \"\""
   type        = string
   default     = ""
 }
