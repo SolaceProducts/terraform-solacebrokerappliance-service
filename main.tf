@@ -255,6 +255,7 @@ resource "solacebroker_msg_vpn_authentication_oauth_profile" "main" {
   issuer                                     = var.issuer
   mqtt_username_validate_enabled             = var.mqtt_username_validate_enabled
   oauth_role                                 = var.oauth_role
+  proxy_name                                 = var.proxy_name
   resource_server_parse_access_token_enabled = var.resource_server_parse_access_token_enabled
   resource_server_required_audience          = var.resource_server_required_audience
   resource_server_required_issuer            = var.resource_server_required_issuer
