@@ -1,6 +1,6 @@
 # Customized ACL and Client Profile Configuration Example
 
-Configuration in this directory shows how to create a customized [ACL profile](https://docs.solace.com/Security/Granting-Clients-Access.htm) or a [client profile](https://docs.solace.com/Security/Assigning-Client-Profiles.htm) on a new Message VPN on the PubSub+ event broker, leveraging the Service Terraform module.
+Configuration in this directory shows how to create a customized [ACL profile](https://docs.solace.com/Security/Granting-Clients-Access.htm) or a [client profile](https://docs.solace.com/Security/Assigning-Client-Profiles.htm) on a new Message VPN on the PubSub+ appliance, leveraging the Service Terraform module.
 
 A new Message VPN automatically includes a permissive `default` ACL profile and a `default` client profile for development and demo purposes. They are not configurable through module variables. If you need profiles to meet specific requirements, the module enables creating an additional customizable ACL and client profile. At a minimum, a name for the profile must be provided and any non-default attribute values.
 
@@ -37,7 +37,7 @@ Note that `default` ACL profile, client profile and client username objects will
 
 ## Running the Example
 
-### Access to a PubSub+ Event Broker
+### Access to a PubSub+ Appliance
 
 If you don't already have access to a broker, see the [Developers page](https://www.solace.dev/) for options to get started.
 

@@ -1,6 +1,6 @@
 # OAuth Authentication Configuration Example
 
-This example shows how to configure OAuth authentication for clients connecting to a PubSub+ event broker at the Message VPN level, leveraging the Service Terraform module.
+This example shows how to configure OAuth authentication for clients connecting to a PubSub+ appliance at the Message VPN level, leveraging the Service Terraform module.
 
 To set this up, you must enable OAuth authentication on the new Message VPN and create an OAuth profile.. With specifying the `oauth_profile_name` variable, the module will take care of both. Necessary [OAuth profile attributes](https://docs.solace.com/Security/Configuring-Client-Authentication.htm#Managing-OAuth-Profiles) can be set through module variables. It is also possible to provide a list of required claim values for both client or resource server roles of the event broker.
 
@@ -38,7 +38,7 @@ This example will create the following resources:
 
 ## Running the Example
 
-### Access to a PubSub+ Event Broker
+### Access to a PubSub+ Appliance
 
 If you don't already have access to a broker, see the [Developers page](https://www.solace.dev/) for options to get started.
 

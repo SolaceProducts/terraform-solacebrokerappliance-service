@@ -1,6 +1,6 @@
 # Message VPN Configuration Example
 
-Configuration in this directory creates a basic [Message VPN](https://docs.solace.com/Features/VPN/Managing-Message-VPNs.htm) on the PubSub+ event broker, leveraging the Service Terraform module.
+Configuration in this directory creates a basic [Message VPN](https://docs.solace.com/Features/VPN/Managing-Message-VPNs.htm) on the PubSub+ appliance, leveraging the Service Terraform module.
 
 The created Message VPN enables SMF and Web Transport messaging services with a message spool of 1500 MB assigned by default, as well as the use of JNDI and DMR. See the example [Services and listen ports](examples/services-and-listen-ports) how to enable and configure other services including REST, MQTT and AMQP.
 
@@ -39,7 +39,7 @@ Note that `default` ACL profile, client profile and client username objects will
 
 ## Running the Example
 
-### Access to a PubSub+ Event Broker
+### Access to a PubSub+ Appliance
 
 If you don't already have access to a broker, see the [Developers page](https://www.solace.dev/) for options to get started.
 

@@ -1,6 +1,6 @@
 # Message VPN Services and Listen Ports Configuration Example
 
-The example in this directory demonstrates how to configure services including ports for a new Message VPN on the PubSub+ event broker, leveraging the Service Terraform module.
+The example in this directory demonstrates how to configure services including ports for a new Message VPN on the PubSub+ appliance, leveraging the Service Terraform module.
 
 SMF and Web Transport messaging services are configured at the event broker level and are enabled on the Message VPN created by the Service module. Other services including REST, MQTT and AMQP are configured at the Message VPN level and need to be individually setup for each VPN. They are disabled by default and need to be enabled, configured and a port assigned if required through module variables. The example will show how to do that.
 
@@ -35,7 +35,7 @@ Note that `default` ACL profile, client profile and client username objects will
 
 ## Running the Example
 
-### Access to a PubSub+ Event Broker
+### Access to a PubSub+ Appliance
 
 If you don't already have access to a broker, see the [Developers page](https://www.solace.dev/) for options to get started.
 

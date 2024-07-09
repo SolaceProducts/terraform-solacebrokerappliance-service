@@ -1,6 +1,6 @@
 # Solace PubSub+ Appliance Service Terraform Module
 
-This Terraform module encapsulates a [Message VPN](https://docs.solace.com/Features/VPN/Managing-Message-VPNs.htm) including client and ACL profiles, resource limits and service on the [Solace PubSub+ Event Broker](https://solace.com/products/event-broker/).
+This Terraform module encapsulates a [Message VPN](https://docs.solace.com/Features/VPN/Managing-Message-VPNs.htm) including client and ACL profiles, resource limits and service on the [Solace PubSub+ Appliance](https://solace.com/products/event-broker/).
 
 You can use this module to create a new Message VPN with a permissive `default` ACL and client profile, ready for messaging. You can also define an optional additional fully customizable ACL and client profile. The module also adds advanced client certificate authentication and OAuth authentication configuration support.
 
