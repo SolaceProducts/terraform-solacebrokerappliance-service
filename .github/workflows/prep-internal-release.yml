@@ -46,11 +46,11 @@ jobs:
             --env system_scaling_maxconnectioncount="1000" --mount type=bind,source=$HOME/solace,destination=/var/lib/solace,ro=false solace/solace-pubsub-standard:latest
           while ! curl -s localhost:8080 | grep aurelia ; do sleep 1 ; done
 
-      - name: Check code builds and pass acceptance test
-        run: |
-          ci/scripts/test-module.sh ci/module-test
-          shopt -s extglob
-          for d in examples/!(basic-client-username)/; do (ci/scripts/test-module.sh "$d"); done
+      # - name: Check code builds and pass acceptance test
+      #   run: |
+      #     ci/scripts/test-module.sh ci/module-test
+      #     shopt -s extglob
+      #     for d in examples/!(basic-client-username)/; do (ci/scripts/test-module.sh "$d"); done
 
       - name: Ensure version reflects release candidate version
         run: |

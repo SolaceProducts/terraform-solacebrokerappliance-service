@@ -217,7 +217,7 @@ variable "authentication_basic_radius_domain" {
 }
 
 variable "authentication_client_cert_allow_api_provided_username_enabled" {
-  description = "Enable or disable allowing a client to specify a Client Username via the API connect method"
+  description = "Enable or disable allowing an incoming client connection to specify a Client Username via the API connect method"
   type        = bool
   default     = null
 }
@@ -247,13 +247,13 @@ variable "authentication_client_cert_validate_date_enabled" {
 }
 
 variable "authentication_kerberos_allow_api_provided_username_enabled" {
-  description = "Enable or disable allowing a client to specify a Client Username via the API connect method"
+  description = "Enable or disable allowing an incoming client connection to specify a Client Username via the API connect method"
   type        = bool
   default     = null
 }
 
 variable "authentication_kerberos_enabled" {
-  description = "Enable or disable Kerberos authentication in the Message VPN"
+  description = "Enable or disable Kerberos authentication for clients connecting to the Message VPN"
   type        = bool
   default     = null
 }
@@ -732,7 +732,7 @@ variable "max_msgs_per_transaction" {
 }
 
 variable "max_subscription_count" {
-  description = "The maximum number of local client subscriptions that can be added to the Message VPN"
+  description = "The maximum number of local subscriptions that can be added to the Message VPN"
   type        = number
   default     = null
 }
@@ -763,6 +763,12 @@ variable "mqtt_username_validate_enabled" {
 
 variable "oauth_role" {
   description = "The OAuth role of the broker"
+  type        = string
+  default     = null
+}
+
+variable "proxy_name" {
+  description = "The name of the proxy to use for discovery, user info, jwks, and introspection requests"
   type        = string
   default     = null
 }
